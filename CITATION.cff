@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below. A related paper is currently under review."
+title: "Real Balloon Telemetry Meets Standards Channel Models: Generator Code"
+type: software
+authors:
+  - family-names: "Hassan"
+    given-names: "Noha"
+    affiliation: "Carleton University; Dalhousie University"
+  - family-names: "Yanikomeroglu"
+    given-names: "Halim"
+    affiliation: "Carleton University"
+repository-code: "https://github.com/nohahassan2023/Real-Balloon-Telemetry-Meets-Standards-Channel-Models-Generator-Code"
+date-released: 2026-09-26
+preferred-citation:
+  type: article
+  status: submitted
+  title: "Real Balloon Telemetry Meets Standards Channel Models: A Link Dataset for High-Altitude Platform Station Communications"
+  authors:
+    - family-names: "Hassan"
+      given-names: "Noha"
+    - family-names: "Yanikomeroglu"
+      given-names: "Halim"
+  year: 2026
