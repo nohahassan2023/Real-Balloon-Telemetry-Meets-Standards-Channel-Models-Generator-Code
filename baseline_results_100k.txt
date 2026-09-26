@@ -1,0 +1,43 @@
+Loading datasets...
+
+=== Training on REAL-platform-geometry dataset ===
+
+=== Training on SYNTHETIC-platform-geometry dataset ===
+
+=== In-distribution evaluation (train and test on same dataset) ===
+  [real->real] SNR regression: MAE=4.032 dB, RMSE=5.860 dB, R2=0.8792
+  [real->real] Outage classification: Acc=0.9246, F1=0.7762, AUC=0.9566
+  [synth->synth] SNR regression: MAE=4.029 dB, RMSE=5.810 dB, R2=0.8807
+  [synth->synth] Outage classification: Acc=0.9176, F1=0.7773, AUC=0.9540
+
+=== Cross-distribution evaluation (train on one, test on the other) ===
+  [real->synth] SNR regression: MAE=4.115 dB, RMSE=5.901 dB, R2=0.8769
+  [real->synth] Outage classification: Acc=0.9155, F1=0.7701, AUC=0.9470
+  [synth->real] SNR regression: MAE=4.111 dB, RMSE=5.905 dB, R2=0.8774
+  [synth->real] Outage classification: Acc=0.9247, F1=0.7793, AUC=0.9552
+
+=== Feature importance for platform-geometry fields ===
+Real-data model, top 8 features (SNR regression):
+carrier_freq_ghz       0.471540
+tx_antenna_gain_dbi    0.128359
+rain_rate_mm_per_hr    0.115360
+bandwidth_mhz          0.071060
+tx_power_dbm           0.057152
+rx_antenna_gain_dbi    0.034505
+elevation_deg          0.028502
+slant_range_km         0.024560
+dtype: float64
+
+Synthetic-data model, top 8 features (SNR regression):
+carrier_freq_ghz       0.466217
+tx_antenna_gain_dbi    0.128771
+rain_rate_mm_per_hr    0.114481
+bandwidth_mhz          0.070577
+tx_power_dbm           0.059161
+rx_antenna_gain_dbi    0.035340
+ground_distance_km     0.029965
+slant_range_km         0.025361
+dtype: float64
+
+haps_altitude_km importance: real-model=0.0042, synth-model=0.0042
+haps_drift_mps importance:   real-model=0.0042, synth-model=0.0043
